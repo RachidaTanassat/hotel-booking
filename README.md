@@ -1,13 +1,13 @@
 # Hotel
->Home
+> Home
 <img width="960" alt="home" src="https://github.com/RachidaTanassat/hotel-management/assets/85264433/b1632188-2e7b-4053-a1ca-86ec9791f7bc">
->La liste des clients
+> La liste des clients
 <img width="960" alt="listeclient" src="https://github.com/RachidaTanassat/hotel-management/assets/85264433/4c2493ad-ce1b-4416-aebf-d13babba7f0a">
->Ajouter un client
+> Ajouter un client
 <img width="959" alt="Ajouter" src="https://github.com/RachidaTanassat/hotel-management/assets/85264433/6c81f75d-55fb-42ce-8093-8f4fe62e83d8">
->La liste des tickets et de réservations de chaque client
+> La liste des tickets et de réservations de chaque client
 <img width="960" alt="LISTE" src="https://github.com/RachidaTanassat/hotel-management/assets/85264433/a35b59a2-d154-4893-8f71-570d2757039f">
->firebase
+> Firebase
 <img width="960" alt="firebase" src="https://github.com/RachidaTanassat/hotel-management/assets/85264433/dd1c6f84-3efb-420b-af36-c298b4c8bb91">
 
 
