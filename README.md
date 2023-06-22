@@ -11,6 +11,14 @@
 > La liste des tickets et de réservations de chaque client
 <img width="960" alt="LISTE" src="https://github.com/RachidaTanassat/hotel-management/assets/85264433/a35b59a2-d154-4893-8f71-570d2757039f">
 
+>La liste des tickets réservés
+<img width="960" alt="ticket" src="https://github.com/RachidaTanassat/hotel-management/assets/85264433/87d96c84-eab1-453b-85b6-6b815d426524">
+
+>La liste de réservation d'hotel
+<img width="960" alt="booking" src="https://github.com/RachidaTanassat/hotel-management/assets/85264433/c7c24150-3a71-4b4c-bbd0-9ca07a0cf022">
+
+
+
 > Firebase
 <img width="960" alt="firebase" src="https://github.com/RachidaTanassat/hotel-management/assets/85264433/dd1c6f84-3efb-420b-af36-c298b4c8bb91">
 
