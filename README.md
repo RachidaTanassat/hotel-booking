@@ -1,3 +1,25 @@
+<img width="960" alt="ticket" src="https://github.com/RachidaTanassat/hotel-management/assets/85264433/5e33cd85-0a75-4265-9cc3-ea2075d2a565">
+![Uploading listeclient.png…](la liste des clients)
+![Uploading LISTE.png…]()
+![Uploading firebase.png…]()
+![Uploading booking.png…]()
+![Uploading Ajouter.png…]()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Hotel
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
