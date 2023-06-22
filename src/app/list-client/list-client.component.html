@@ -1,0 +1,192 @@
+<div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+
+    <!-- infos client -->
+    <div *ngFor="let item of itemArray">
+        <div class="uk-card uk-card-default uk-card-body" *ngIf="item.$key === id">
+            <h3 class="uk-card-title"><i>informations sur le client</i> </h3>
+            
+            <div class="uk-margin">
+             <b> Nom : {{item.nom}} </b>
+        </div> 
+        <div class="uk-margin">
+            <b>  Prénom : {{item.prenom}} </b>
+    </div> 
+    <div class="uk-margin">
+        <b> addresse : {{item.address}}</b>
+
+</div> 
+<div class="uk-margin">
+   <b> numéro de télephone : {{item.phone}} </b>
+</div>
+</div>
+</div>
+<!-- end infos client -->
+<!-- ticket -->
+<div>
+    <div class="uk-card uk-card-default uk-card-body">
+        					<!-- add Ticket -->
+                            <h2 class="uk-card-title">les tickets du client </h2>
+                            <a href="#modal-sections" class="btn btn-info btn-lg" uk-toggle>
+                                <span class="glyphicon glyphicon-plus-sign"></span> Ajouter un ticket
+                              </a>
+<div id="modal-sections" uk-modal>
+    <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default" type="button"
+                    uk-close></button>
+            <div class="uk-modal-header">
+                    <h2 class="uk-modal-title">Ajouter un ticket</h2>
+            </div>
+
+            <div class="uk-margin">
+                    <input class="uk-input"
+                            id="form-horizontal-text" type="text"
+                            placeholder="le lieu du départ" name="start"
+                            [(ngModel)]="ticket.start"
+                           >
+            </div>
+            <div class="uk-margin">
+                    <input class="uk-input"
+                            id="form-horizontal-text" type="text"
+                            placeholder="le lieu du d'arriver"
+                            name="end" [(ngModel)]="ticket.end">
+            </div>
+            <div class="uk-margin">
+                <input class="uk-input"
+                        id="form-horizontal-text" type="date"
+                        placeholder="la date de départ"
+                        name="end" [(ngModel)]="ticket.date">
+        </div>
+           
+
+
+            <div class="uk-modal-footer uk-text-right">
+                    <span> <button class="uk-button uk-button-default uk-modal-close"
+                                    type="button">Cancel</button></span>
+                    <span> <button class="uk-button uk-button-primary"
+                                    type="button" (click)="insertTicket()"
+                                    >Save</button>
+                    </span>
+            </div>
+    </div>
+</div>
+<!-- end -->
+<div *ngFor="let item of ticketArray">
+    <div *ngIf="item.reference === id">
+<h4 class="uk-heading-line"><span><i> {{item.start}} => {{item.end}}</i></span></h4> 
+<div class="uk-margin">
+   <b>  Lieu de départ : {{item.start}} </b>
+</div> 
+<div class="uk-margin">
+<b> Lieu d'arriver : {{item.end}}</b>
+</div> 
+<div class="uk-margin">
+    <b> {{item.date}}</b>
+    </div> 
+</div>
+</div>
+
+    </div>
+</div>
+<!-- end ticket -->
+
+<!-- Hotel booking -->
+<div>
+    <div class="uk-card uk-card-default uk-card-body">
+        					<!-- add hotel booking -->
+                            <h2 class="uk-card-title">les reservations du client </h2>
+                            <a href="#modal-hotel-sections" class="btn btn-info btn-lg" uk-toggle>
+                                <span class="glyphicon glyphicon-plus-sign"></span> Ajouter une reservation
+                              </a>
+<div id="modal-hotel-sections" uk-modal>
+    <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default" type="button"
+                    uk-close></button>
+            <div class="uk-modal-header">
+                    <h2 class="uk-modal-title">Ajouter une reservation</h2>
+            </div>
+
+            <div class="uk-margin">
+                    <input class="uk-input"
+                            id="form-horizontal-text" type="number"
+                            placeholder="le numéro du chamber" name="num_chamber"
+                            [(ngModel)]="hotelbooking.num_chamber"
+                           >
+            </div>
+            <div class="uk-margin">
+                    <input class="uk-input"
+                            id="form-horizontal-text" type="date"
+                            placeholder="date d'entrer"
+                            name="date_start" [(ngModel)]="hotelbooking.date_start">
+            </div>
+            <div class="uk-margin">
+                <input class="uk-input"
+                        id="form-horizontal-text" type="date"
+                        placeholder="la date de sortie"
+                        name="date_end" [(ngModel)]="hotelbooking.date_end">
+        </div>
+        <div class="uk-margin">
+            <input class="uk-input"
+                    id="form-horizontal-text" type="number"
+                    placeholder="le nombre de nuits"
+                    name="num_nuit" [(ngModel)]="hotelbooking.num_nuit">
+    </div>
+    <div class="uk-margin">
+        <div class="uk-form-label" name="type" [(ngModel)]="hotelbooking.type">type du chamber</div>
+        <div class="uk-form-controls uk-form-controls-text">
+            <label><input class="uk-radio" type="radio" name="type" value="single"  [(ngModel)]="hotelbooking.type"> Single</label>
+            <label><input class="uk-radio" type="radio" name="type" value="double" [(ngModel)]="hotelbooking.type"> Double</label>
+            <label><input class="uk-radio" type="radio" name="type" value="family" [(ngModel)]="hotelbooking.type"> Family</label>
+        </div>
+    </div>
+    <div class="uk-margin">
+        <div class="uk-form-label" name="smoking" [(ngModel)]="hotelbooking.smoking">Smoking</div>
+        <div class="uk-form-controls uk-form-controls-text">
+            <label><input class="uk-radio" type="radio" name="smoking" value="oui" [(ngModel)]="hotelbooking.smoking"> Oui</label>
+            <label><input class="uk-radio" type="radio" name="smoking" value="non" [(ngModel)]="hotelbooking.smoking"> Non</label>
+        </div>
+    </div>
+           
+
+
+            <div class="uk-modal-footer uk-text-right">
+                    <span> <button class="uk-button uk-button-default uk-modal-close"
+                                    type="button">Cancel</button></span>
+                    <span> <button class="uk-button uk-button-primary"
+                                    type="button" (click)="insertResev()"
+                                    >Save</button>
+                    </span>
+            </div>
+    </div>
+</div>
+<!-- end -->
+<div *ngFor="let item of HotelArray"> 
+   
+    <div *ngIf="item.reference === id">
+<h4 class="uk-heading-line"><span><i> {{item.num_chamber}}</i></span></h4> 
+<div class="uk-margin">
+   <b>  La date d'entrer : {{item.date_start}} </b>
+</div> 
+<div class="uk-margin">
+<b> La date de sortie : {{item.date_end}}</b>
+</div> 
+<div class="uk-margin">
+    <b> Nombre de nuits : {{item.num_nuit}}</b>
+ </div> 
+ <div class="uk-margin">
+       <b>Le type du chamber : {{item.type}}</b>
+ </div> 
+   <div class="uk-margin">
+    <b> Smoking : {{item.smoking}}</b>
+</div> 
+</div>
+</div>
+
+
+
+    </div>
+</div>
+<!-- end hotel booking -->
+
+
+</div>
+

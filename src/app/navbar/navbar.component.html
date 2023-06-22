@@ -1,0 +1,45 @@
+<style>
+
+.uk-navbar-container {
+    /* Couleur de fond de la barre de navigation */
+    background-color: #0f3680;
+    border-color: #1a1818;
+   }
+
+</style>
+
+
+<nav class="uk-navbar-container" uk-navbar style="border: 2px; color:black">
+
+    <div class="uk-navbar-left">
+
+        <ul class="uk-navbar-nav">
+            <li class="uk-active"><a routerLink="/home">home</a></li>
+            <li>
+                <a routerLink="/client">client</a>
+    
+            </li>
+            <li><a routerLink="/tickets">Tickets</a></li>
+            <li><a routerLink="/hotel_booking">Hotel booking</a></li>
+        </ul>
+
+    </div>
+     <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav">
+            <li>
+                <a routerLink="#">profile</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-active"><a routerLink="#">profile</a></li>
+                        <li><a routerLink="#">déconnection</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+
+</nav>
+
