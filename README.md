@@ -1,19 +1,4 @@
-<img width="959" alt="Ajouter" src="https://github.com/RachidaTanassat/hotel-management/assets/85264433/9773d4b5-9b62-431d-9f00-2eb28766186f"># Hotel
-<img width="960" alt="ticket" src="https://github.com/RachidaTanassat/hotel-management/assets/85264433/07f3945f-d5a7-4dc6-9576-52ff109c0a90">
-![Uploading Ajouter.png…](ajouter)
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Hotel
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
 
 ## Development server
